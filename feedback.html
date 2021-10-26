@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  *{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+body
+  {
+   background-image:url(https://www.itl.cat/pngfile/big/99-992191_wallpaper-linear-gradient-green-blue-spring-green-dark.jpg);
+ 
+  background-size: cover;
+  background-position: center;
+}
+/* header styling starts here */
+ul
+{
+  float: right;
+  list-style-type: none;
+    margin-top: 5px;
+}
+ul li
+{
+  display: inline-block;
+}
+ul li a
+{
+ text-decoration: none;
+ color:#fff ;
+ padding: 5px 20px;
+ border:1px solid transparent ;
+ transition: 0.6s ease;
+}
+ul li a:hover
+{
+background-color:#fff;
+color:#000 ;  
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding:20px;
+  margin-top: 10px;
+  
+}
+</style>
+
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["firstname"].value;
+
+  var y = document.forms["myForm"]["lastname"].value;
+
+  var z = document.forms["myForm"]["subject"].value;
+
+ if (x == ""||y == ""||z == "") {
+    alert("All the fields must be filled out!");
+    return false;
+  }
+}
+ 
+</script>
+</head>
+<body>
+<header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="Search.html">Search</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+    </ul>
+</header>
+
+<div class="container">
+  <form name="myForm" action="feedbackformdata.php" onsubmit="return validateForm()" method="post">
+    <h2>Feedback </h2>
+    <br>
+    <hr>
+    <br>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit"  value="Submit">
+  </form>
+</div>
+</body>
+</html>

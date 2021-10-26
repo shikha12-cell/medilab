@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+
+}
+body
+  {
+  
+  background: url(https://www.itl.cat/pngfile/big/99-992191_wallpaper-linear-gradient-green-blue-spring-green-dark.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* header styling starts here */
+ul
+{
+  float: right;
+  list-style-type: none;
+    margin-top: 15px;
+}
+ul li
+{
+  display: inline-block;
+}
+ul li a
+{
+ text-decoration: none;
+ color:#fff ;
+ padding: 5px 20px;
+ border:1px solid transparent ;
+ transition: 0.6s ease;
+}
+ul li a:hover
+{
+background-color:#fff;
+color:#000 ;  
+}
+
+
+
+.logo img
+{
+  float:left;
+  width:150px;
+  height:auto;
+
+}
+
+.main
+{
+  max-width:1400px;
+  margin: auto;
+}
+
+
+/* header styling ends here */
+#gallery {
+  clear: both;
+}
+
+.imageWrapper {
+  float: left; 
+  margin-right: 1em; 
+  margin-bottom: 1em;
+  padding: 15px;
+   margin: auto;
+      margin-left:16px;
+      margin-right:6px;
+}
+
+.imageCaption {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+

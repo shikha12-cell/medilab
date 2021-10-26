@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Gallery </title><style>
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+ background-image:url(https://i.pinimg.com/originals/8d/ab/2c/8dab2ccfd0d3573d36a2764357b3d467.jpg); 
+   padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+.row,
+.row > .column {
+  padding:8px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+img{
+  height:200px;
+  width:10%;
+}
+
+.show {
+  display: block;
+}
+}
+</style>
+</head>
+<body>
+<h2 style="font-weight: bold; font-style: italic;">Cough And Cold Meds</h2>
+<div class="row">
+
+   <div class="column">
+    <div class="content">
+      <a href="cofsils.html">
+        <img src="cofsils.jpeg" alt="medicine" style="width:100%">
+      </a>
+      <h4>Cofsils</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+       <a href="orange.html">
+    <img src="orange.jpeg" alt="medicine" style="width:100%">
+  </a>
+      <h4>Cofsils</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+    <a href="liveeasy.html">
+    <img src="vitamin.jpeg" alt="medicine" style="width:100%">
+  </a>
+      <h4>Life Easy</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column ">
+    <div class="content">
+      <a href="https://res.cloudinary.com/mtree/image/upload/f_auto,q_auto/Vicks_AU/en-au/-/media/Vicks_AU/Images/Callouts/AU/Desktop/Products/Cough_Syrup_Children_e.jpg?v=1-202003190805">
+      <img src="https://res.cloudinary.com/mtree/image/upload/f_auto,q_auto/Vicks_AU/en-au/-/media/Vicks_AU/Images/Callouts/AU/Desktop/Products/Cough_Syrup_Children_e.jpg?v=1-202003190805" alt="medicine" style="width:100%">
+    </a>
+      <h4>Vicks Cough Syrup</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+      <a href="https://www.urbanhelps.com/wp-content/uploads/2020/05/qkt4ayo2ynpfrzhievoy.jpg">
+    <img src="https://www.urbanhelps.com/wp-content/uploads/2020/05/qkt4ayo2ynpfrzhievoy.jpg" alt="medicine" style="width:100%">
+  </a>
+      <h4>Grilintucus </h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+      <a href="https://cdn.shopify.com/s/files/1/0264/9980/9339/products/kasahari-syrup_2084x.jpg?v=1582521919">
+    <img src="https://cdn.shopify.com/s/files/1/0264/9980/9339/products/kasahari-syrup_2084x.jpg?v=1582521919" alt="medicine" style="width:100%">
+    
+  </a>
+      <h4>Sri Sri Sryup</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+      <a href="https://cdn01.pharmeasy.in/dam/products/193653/tusq-dx-cough-syrup-100ml-front-2-1597360953.jpg">
+      <img src="https://cdn01.pharmeasy.in/dam/products/193653/tusq-dx-cough-syrup-100ml-front-2-1597360953.jpg" alt="Choc Brownie" style="width:100%">
+    </a>
+      <h4>TusQ-D</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+      <a href="https://torex.co.in/product_images/medium/Product-1407826105.jpg">
+    <img src="https://torex.co.in/product_images/medium/Product-1407826105.jpg" alt="medicine" style="width:100%">
+  </a>
+      <h4>Torex-SF</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+      <a href="https://omsi.in/wp-content/uploads/2017/05/Broxyl-D-Cough-Syrup.jpg">
+    <img src="https://omsi.in/wp-content/uploads/2017/05/Broxyl-D-Cough-Syrup.jpg" alt="medicine" style="width:100%">
+  </a>
+      <h4>Broxyl-D</h4>
+      <p></p>
+    </div>
+  </div>
+<div class="column ">
+    <div class="content">
+      <a href="https://res.sastasundar.com/incom/images/product/Alday-1563270022-10002565-1.jpg
+">
+    <img src="https://res.sastasundar.com/incom/images/product/Alday-1563270022-10002565-1.jpg
+" alt="medicine" style="width:100%">
+  </a>
+      <h4>Cetrizine</h4>
+      <p></p>
+    </div>
+  </div>
+
+</div>
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
